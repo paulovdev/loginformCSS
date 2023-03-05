@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Poppins:wght@300;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: #191816;
+    color: #AFB6C2;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #191816;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda {
+
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direita {
+    background: url("images/side-image.jpg");
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    background: #24221f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    border-radius: 5px;
+}
+
+.card-login>h1 {
+    color: #d4ccb6;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield-email, .textfield-password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 20px;
+    padding: 1em;
+    gap: 1em;
+}
+
+.textfield-email > input {
+    background-image: url("images/mail.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+    border-radius: 5px;
+    background-color: #312e2a;
+    border: 1px solid #afb6c2;
+    border-radius: 3px;
+
+    width: 300px;
+    padding: 15px;
+
+
+    padding-left: 40px;
+
+    align-items: center;
+    line-height: 0;
+
+    color: white;
+}
+.textfield-email > input:focus-within {
+    background-image: url("images/mail-focus.svg");
+}
+
+
+.textfield-password > input {
+    background-image: url("images/lock.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+    border-radius: 5px;
+    background-color: #312e2a;
+    border: 1px solid #afb6c2;
+    border-radius: 3px;
+
+    width: 300px;
+    padding: 15px;
+
+
+    padding-left: 40px;
+
+    align-items: center;
+    line-height: 0;
+
+    color: white;
+
+
+}
+
+
+.textfield-password > input:focus-within {
+    border: 1px solid #ffc632;
+}
+
+
+.textfield-email, .textfield-password>input::placeholder {
+    line-height: 0;
+    padding: 20px;
+}
+
+input:focus {
+    border: 1px solid #ffc632;
+    border-radius: 5px;
+}
+
+
+
+
+.checkbox-wrapper-1 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    gap: .4rem;
+}
+
+.checkbox-wrapper-1 :nth-child(3) {
+    color: #ffc632;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+}
+
+.btn-login {
+    border: 1px solid #ffc632;
+    border-radius: 5px;
+
+    background-color: #ffc632;
+    color: #473404;
+
+
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    width: 300px;
+
+}
+
+.n-tem-conta :nth-child(1) {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffc632;
+    text-decoration: none;
+    gap: .4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .direita {
+        background: url("");
+        width: 10vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esquerda {
+
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-login {
+        background: #24221f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+        border-radius: 5px;
+    }
+
+}
